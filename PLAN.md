@@ -27,3 +27,5 @@ All comments will have a uid, all pages will have a uid.
 ### Currently viable options: 
 - a p2p db file that stores the comment data. [might have security issues.]
 - blockchain? very unlikely.
+- Storing data in a system environment variable? Not sure if hosts support this, but if they did, this can be done.
+- Using a free alternative to github, such as [notabug](https://notabug.org)
