@@ -19,3 +19,11 @@ User --> Comment Component --> [Datafile where the comments will be stored]
 
 
 ```
+
+According to the diagram above, We need a way to push changes to the site folder. This can either be done by having a json file that is pushed to git when the comments are changed, but that will require access to the github repo and that is not something desirable. 
+
+All comments will have a uid, all pages will have a uid.
+
+### Currently viable options: 
+- a p2p db file that stores the comment data. [might have security issues.]
+- blockchain? very unlikely.
