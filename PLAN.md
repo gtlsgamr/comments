@@ -29,3 +29,6 @@ All comments will have a uid, all pages will have a uid.
 - blockchain? very unlikely.
 - Storing data in a system environment variable? Not sure if hosts support this, but if they did, this can be done.
 - Using a free alternative to github, such as [notabug](https://notabug.org)
+- Serverless function (**Most viable**)
+---
+As of today, 11th May 2021, I have decided to go with serverless functions. They are cheaper than actual servers, and are available free of cost at many providers. So serverless functions it is then.
