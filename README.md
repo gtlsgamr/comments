@@ -26,7 +26,7 @@ This process is similar to the Manual one, except here the user doesn't have to 
 Although this won't be ***truly*** serverless.
 ### Dependencies
 
-This script requires [showdownjs](https://github.com/showdownjs/showdown/) to convert markdown comments into html. 
+This software requires [showdownjs](https://github.com/showdownjs/showdown/) to convert markdown comments into html. ***You can ignore this if you don't want markdown support.***
 It also requires jquery.
 
 ### Install
