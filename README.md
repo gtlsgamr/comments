@@ -11,7 +11,7 @@ There are two ways it can work:
 
 ### Manual E-mails
 
-The site owner creates a comment entry form and puts it in the pages where they want to comments to be shown. A sample is shown in `sample.html` file.
+The site owner creates a comment entry form and puts it in the pages where they want the comments to be shown. A sample is shown in `sample.html` file.
 
 This way relies on the site visitors to E-mail the comment to the site owner. Whenever a user enters a comment in the comment box and clicks submit, it will open a pop up, asking the user to open their mail client with a pre-formatted message to the site owner. The user has to click OK and send. 
 
@@ -26,7 +26,7 @@ This process is similar to the Manual one, except here the user doesn't have to 
 Although this won't be ***truly*** serverless.
 ### Dependencies
 
-This script requires [showdownjs](https://github.com/showdownjs/showdown/) to convert markdown comments into html. 
+This software requires [showdownjs](https://github.com/showdownjs/showdown/) to convert markdown comments into html. ***You can ignore this if you don't want markdown support.***
 It also requires jquery.
 
 ### Install
