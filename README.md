@@ -12,9 +12,9 @@ There are two ways it can work:
 
 The site owner creates a comment entry form and puts it in the pages where they want to comments to be shown. A sample is shown in `sample.html` file.
 
-This way relies on the site visitors to E-mail the comment to the site owner. Whenever a user enters a comment in the comment box and clicks submit, it will open a pop up, asking the user to open their mail clientwith a preformatted message to the site owner. The user has to click OK and send. 
+This way relies on the site visitors to E-mail the comment to the site owner. Whenever a user enters a comment in the comment box and clicks submit, it will open a pop up, asking the user to open their mail client with a pre-formatted message to the site owner. The user has to click OK and send. 
 
-If the user chooses to not open their mail client or they don't have one, the preformatted message will be copied to their clipboard which they can send manually to the site owner.
+If the user chooses to not open their mail client or they don't have one, the pre-formatted message will be copied to their clipboard which they can send manually to the site owner.
 
 Once the site owner receives the message, which has a javascript object, they can paste that object in the `comments-data.js` file and rebuild their site. The comments will show up on the specified page.
 
