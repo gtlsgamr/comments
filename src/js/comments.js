@@ -47,7 +47,7 @@ function jsonCreator(alias, comment) {
 	};
 	//Below code does the work of copying the predefined messsage for the user and also mailing it to the site owner.
 	var message = JSON.stringify(result);
-	message = 'New comment from' + alias + '\n**********\n' + message + '\n**********';
+	message = 'New comment from' + alias + `\n**********\n` + message + `\n**********`;
 	var place = document.getElementById('comment');
 	var text = place.value;
 	place.value = message;
