@@ -3,6 +3,7 @@
 
 A FREE/Libre commenting engine that is lightweight, serverless, and possibly ~~doesn't~~ requires wonky workarounds.
 
+![guycomputer](https://www.hitarththummar.xyz/images/guycomputer.gif)
 ## How it works
 This engine is **NOT** fully automated. It relies on the site owner to do some manual work, but this was the only way to make sure that it stayed lightweight, and serverless.
 
