@@ -23,7 +23,7 @@ Once the site owner receives the message, which has a javascript object, they ca
 
 This process is similar to the Manual one, except here the user doesn't have to do anything. They press the submit button and the program will send the data to a paste page url provided by the site owner. The paste page will also be made by me and added here later. This method is still a WIP.
 
-Although this won't be ***truly*** serverless.
+Although this method won't be ***truly*** serverless.
 ### Dependencies
 
 This software requires [showdownjs](https://github.com/showdownjs/showdown/) to convert markdown comments into html. ***You can ignore this if you don't want markdown support.***
