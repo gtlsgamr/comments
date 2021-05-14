@@ -33,7 +33,7 @@ It also requires jquery.
 
 ```
 1. Make sure all dependencies are linked in the head or foot of your page.
-2. Link comments.js and commends-data.js in your page.
+2. Link comments.js and comments-data.js in your page.
 3. Change the config variables in comments.js according to your needs.
 4. Add the sample.html or equivalent code in your page.
 ```
