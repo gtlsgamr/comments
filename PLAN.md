@@ -41,9 +41,7 @@ Whoops. Change of plans. To make this truly FOSS, I am removing **ALL** Dependen
 - The site owner links the javascript on their blog page.
 - The script will look for the json file in the site directory and populate comments based on current url.
 - The script will also create a comments box, with inputs for alias and comment. Once the user enters their alias and comment and clicks submit, there are 2 paths that the script might take:
-	1. Pressing the submit button will open the user's mail client/ask the user to mail a dynamically generated diff file that can be sent to the site owner. Once it is sent to them, they can apply that diff file and rebuild the site. This is a wonky workaround but it is entirely FOSS and free from dependency, not very user-friendly though.
-	2. Pressing the submit button will create the diff internally, and sent it to a unique link at a FOSS pastebin, that is set by the user. I am planning to host the pastebin by myself for now.
+	1. Pressing the submit button will open the user's mail client/ask the user to mail a dynamically generated diff file that can be sent to the site owner. Once it is sent to them, they can apply that diff file and rebuild the site. This is a wonky workaround but it is entirely FOSS and free from dependency, not very user-friendly though. **Implemented!**
+	2. Pressing the submit button will create the diff internally, and sent it to a unique link at a FOSS pastebin, that is set by the user. I am planning to host the pastebin by myself for now.**will implement soon!(TM)**
 - I will be keeping both options open for site owners.
-
-
 
