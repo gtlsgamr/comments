@@ -1,51 +1,45 @@
-const EMAIL = "hittarththummarcoc@gmail.com"
-const SITE = "codingproblems"
+const EMAIL = 'email';
+const SITE = 'sitename';
 
-var url = encodeURI(window.location.href.split('#')[0]);
-//Code to add comments recursively
-$(document).ready(function () {
-	var commentslist = document.querySelector('.commentslist');
-	var converter = new showdown.Converter();
+var script = document.createElement('script');
+script.src = "https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js";
+document.head.appendChild(script)
 
-	if (commentsobj[0].alias != undefined) {
-
-
-		for (key of commentsobj) {
-			if (key.postId == url) {
-				var txt = `
-				<div class='comments-dest'>
+function displaycomments(){
+	var url = encodeURI(window.location.href.split('#')[0]);
+	for(let i=0;i<commentsdata.length;i++){
+			//do the comment display thing
+			var commentslist = 	document.getElementById("solution");
+			var converter = new showdown.Converter();
+			var txt = `
+			<div class='comments-dest'>
 				<p class='comments-header'>
-				${key.alias}
+					${commentsdata[i].alias}
 				</p>
 				<p class='comments-time'>
-				${key.time}
+					${commentsdata[i].time}
 				</p>
 				<hr>
-				<div class='comments-content'>
-				${converter.makeHtml(key.body)}
-				</div>
-				<hr class='class-1'>
-				</div>`;
-				commentslist.insertAdjacentHTML('beforeend', txt);
-			}
-
-		}
-
+			<div class='comments-content'>
+				${converter.makeHtml(commentsdata[i].body)}
+			</div>
+			<hr class='class-1'>
+			</div>`;
+		console.log(txt);
+			commentslist.insertAdjacentHTML("beforeend",txt);
 	}
+}
 
-
-
-
-
-});
-function jsonCreator(alias, comment) {
+function postcomments(){
+	var alias = document.getElementById('alias').value;
+	var comment = document.getElementById('comment').value;
+	var url = encodeURI(window.location.href.split('#')[0]);
 	var result = {
 		"postId": url,
 		"time": new Date().toString(),
 		"alias": alias,
 		"body": comment,
 	};
-	//Below code does the work of copying the predefined messsage for the user and also mailing it to the site owner.
 	var message = JSON.stringify(result);
 	var place = document.getElementById('comment');
 	var text = place.value;
@@ -62,5 +56,6 @@ function jsonCreator(alias, comment) {
 		alert("The message has been copied to your clipboard, you can email it to owner if you wish.")//cancel
 	}
 	console.log(JSON.stringify(result));
+}
 
-};
+displaycomments();

@@ -1,10 +1,14 @@
+<script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+<script src="/js/commentsdata.js"></script>
+<script src="/js/comments.js"></script>
+<link rel="stylesheet" href="/css/comments.css"/>
 <form name="comments" class='comments-form'>
 	<div><h3>Post Comment</h3></div>
 	<div>
-		<input type="text" class='comment-field' name="alias" placeholder="Enter your name here"  id="alias" style="" required />
+		<input type="text" class='comment-field' name="alias" placeholder="Your Alias"  id="alias" style="" required />
 	</div>
 	<div>
-		<textarea type="text"  name="comment" placeholder="Enter your comment here"  id="comment" placeholder=" Enter comments, Markdown is supported" required > </textarea>
+		<textarea type="text"  name="comment" placeholder="Enter your comment here"  id="comment" placeholder=" Enter comments" required > </textarea>
 	</div><div>    
 		<button type="button" onclick="jsonCreator(alias.value,comment.value)" id="comment-button">Comment</button>
 	</div>
