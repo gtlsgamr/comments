@@ -6,7 +6,7 @@ script.src = "https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min
 document.head.appendChild(script)
 
 function displaycomments(){
-	var url = encodeURI(window.location.href.split('#')[0]);
+	var url = window.location.pathname;
 	for(let i=0;i<commentsdata.length;i++){
 			//do the comment display thing
 		if(commentsdata[i].postId == url){
@@ -35,7 +35,7 @@ function displaycomments(){
 function postcomments(){
 	var alias = document.getElementById('alias').value;
 	var comment = document.getElementById('comment').value;
-	var url = encodeURI(window.location.href.split('#')[0]);
+	var url = window.location.pathname;
 	var result = {
 		"postId": url,
 		"time": new Date().toString(),
